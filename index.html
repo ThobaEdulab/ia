@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Formation IA — les liens</title>
+<style>
+  :root{
+    --bg:#1c3327; --card:#24402f; --card-hover:#2c4d38;
+    --line:#3a5a45; --cream:#f4f1e8; --muted:#a9c4b3;
+    --green:#7fd6a2; --green-solid:#1e8a4a;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:var(--bg);color:var(--cream);min-height:100vh;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    display:flex;flex-direction:column;align-items:center;
+    padding:48px 20px 40px;line-height:1.5;
+  }
+  .wrap{width:100%;max-width:620px}
+  header{text-align:center;margin-bottom:40px}
+  .logo{font-size:44px;font-weight:800;letter-spacing:-.5px}
+  .logo .a{color:var(--green)}
+  .tagline{color:var(--muted);font-size:16px;margin-top:10px}
+  .kicker{
+    display:inline-block;font-size:12px;font-weight:700;letter-spacing:1.5px;
+    text-transform:uppercase;color:var(--green);
+    background:rgba(127,214,162,.12);border:1px solid var(--line);
+    padding:5px 12px;border-radius:999px;margin-bottom:22px;
+  }
+  .links{display:flex;flex-direction:column;gap:16px}
+  a.card{
+    display:flex;align-items:center;gap:18px;text-decoration:none;color:inherit;
+    background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:20px 22px;transition:background .15s,border-color .15s,transform .15s;
+  }
+  a.card:hover{background:var(--card-hover);border-color:var(--green);transform:translateY(-2px)}
+  a.card:focus-visible{outline:3px solid var(--green);outline-offset:2px}
+  .num{
+    flex:0 0 46px;height:46px;border-radius:12px;
+    background:var(--green-solid);color:#fff;font-weight:800;font-size:20px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .body{flex:1;min-width:0}
+  .name{font-size:20px;font-weight:700}
+  .name .sep{color:var(--green)}
+  .desc{color:var(--muted);font-size:14px;margin-top:3px}
+  .host{color:var(--green);font-size:12.5px;margin-top:6px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;word-break:break-all}
+  .arrow{flex:0 0 auto;color:var(--muted);font-size:22px;transition:transform .15s,color .15s}
+  a.card:hover .arrow{color:var(--green);transform:translateX(3px)}
+  footer{color:var(--muted);font-size:13px;text-align:center;margin-top:40px}
+  footer .strong{color:var(--cream)}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="kicker">Formation · CNFPT</div>
+      <div class="logo"><span class="a">IA</span> — les outils</div>
+      <p class="tagline">Les liens qu'on utilise pendant la formation.<br>Cliquez pour ouvrir chaque outil.</p>
+    </header>
+
+    <nav class="links">
+      <a class="card" href="https://comparia.beta.gouv.fr/" target="_blank" rel="noopener">
+        <div class="num">1</div>
+        <div class="body">
+          <div class="name">compar<span class="sep">:</span>IA</div>
+          <div class="desc">Comparez les réponses de +30 IA côte à côte — service public, gratuit, sans compte.</div>
+          <div class="host">comparia.beta.gouv.fr</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+
+      <a class="card" href="https://duck.ai/" target="_blank" rel="noopener">
+        <div class="num">2</div>
+        <div class="body">
+          <div class="name">Duck.ai</div>
+          <div class="desc">Discutez avec plusieurs IA de façon anonyme — gratuit, sans compte (DuckDuckGo).</div>
+          <div class="host">duck.ai</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+
+      <a class="card" href="https://thobaedulab.github.io/ia-impact-calculateur/" target="_blank" rel="noopener">
+        <div class="num">3</div>
+        <div class="body">
+          <div class="name"><span class="sep">IA</span>'impact</div>
+          <div class="desc">Estimez l'impact environnemental de vos usages d'IA sur une session.</div>
+          <div class="host">thobaedulab.github.io/ia-impact-calculateur</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+    </nav>
+
+    <footer>
+      Page de formation animée par <span class="strong">Thomas Mouchoux</span>.
+    </footer>
+  </div>
+</body>
+</html>
